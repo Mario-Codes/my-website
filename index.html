@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <header>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>DJ Website</title>
+        <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+        <link rel="stylesheet" href="styles.css">
+        <script src="https://kit.fontawesome.com/0051ecdf20.js" crossorigin="anonymous"></script>
+        <link href="http://fonts.cdnfonts.com/css/new-super-mario-font-u" rel="stylesheet">
+    </header>
+
+
+<!-- Navbar Section -->
+    <body>
+        <nav class="navbar">
+            <div class="navbar__container">
+                <a href="/" id="navbar__logo">
+                    <i class="fa fa-record-vinyl"></i>DJ Supa</a>
+                <div class="navbar__toggle" id="mobile-menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+                <ul class="navbar__menu">
+                    <li class="navbar__item">
+                        <a href="/" class="navbar__links">Home</a>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="/tech.html" class="navbar__links">Booking</a>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="/" class="navbar__links">Packages</a>
+                    </li>
+                    <li class="navbar__btn">
+                        <a href="/" class="button">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <!-- DJ Section -->
+        <div class="main">
+            <div class="main__container">
+                <div class="main__content">
+                    <h1>DJing</h1>
+                    <h2>Is an Art</h2>
+                    <p>The Dance Floor is my Canvas.</p>
+                    <button class="main__btn">
+                        <a href="/">Get Started</a>
+                    </button>
+                </div>
+                <div class="main__img--container">
+                    <img src="images/pic1.svg" alt="pic" id="main__img">
+                </div>
+            </div>
+        </div>
+
+        <!-- Service Section-->
+        <div class="services">
+            <h1>See what the Hype is all about</h1>
+            <div class="services__container">
+                <div class="services__card">
+                    <h2>Corporate Events</h2>
+                    <p>Big or Small</p>
+                    <button class="book__btn">Book Now</button>
+                </div>
+                <div class="services__card">
+                    <h2>Wedding Events</h2>
+                    <p>Take the Plunge</p>
+                    <button class="book__btn2">Book Now</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer Section -->
+        <div class="footer__container">
+            <div class="footer__link">
+                <div class="footer__link--wrapper">
+                    <div class="footer__link--items">
+                        <h2>About Us</h2>
+                        <a href="/">How it works</a>
+                        <a href="/">Testimonals</a>
+                        <a href="/">Careers</a>
+                        <a href="/">Investments</a>
+                        <a href="/">Terms of Service</a>
+                    </div>
+                    <div class="footer__link--items">
+                        <h2>Contact Us</h2>
+                        <a href="/">Contact</a>
+                        <a href="/">Support</a>
+                        <a href="/">Destinations</a>
+                        <a href="/">Sponsorships</a>
+                    </div>
+                    <div class="footer__link--wrapper">
+                        <div class="footer__link--items">
+                            <h2>Videos</h2>
+                            <a href="/">Submit Videos</a>
+                            <a href="/">Ambassadors</a>
+                            <a href="/">Agency</a>
+                            <a href="/">Influencer</a>
+                        </div>
+                        <div class="footer__link--wrapper">
+                            <div class="footer__link--items">
+                                <h2>Social Media</h2>
+                                <a href="/">Instagram</a>
+                                <a href="/">Facebook</a>
+                                <a href="/">Youtube</a>
+                                <a href="/">Twitter</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="social__media">
+                <div class="social__media--wrap">
+                    <div class="footer__logo">
+                        <a href="/" id="footer__logo">
+                            <i class="fa-solid fa-record-vinyl"></i>
+                        </a>
+                    </div>
+                    <p class="website__rights">DJ Supa 2022. All rights Reserved</p>
+                    <div class="social__icons">
+                        <a href="https://www.facebook.com/" class="social__icons--link" target="_blank">
+                            <i class="fa fa-facebook"></i>
+                        </a>
+                        <a href="https:instagram.com" class="social__icons--link" target="_blank">
+                            <i class="fa fa-instagram"></i>
+                        </a>
+                        <a href="https:linkedin.com" class="social__icons--link" target="_blank">
+                            <i class="fa fa-linkedin"></i>
+                        </a>
+                        <a href="https:twitter.com" class="social__icons--link" target="_blank">
+                            <i class="fa fa-twitter"></i>
+                        </a>
+                        <a href="https:youtube.com" class="social__icons--link " target="_blank">
+                            <i class="fa fa-youtube"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="app.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+        <script>
+            window.sr = ScrollReveal();
+            sr.reveal('.navbar__container', {
+                duration: 3000,
+                origin: 'bottom'
+            });
+            window.sr = ScrollReveal();
+            sr.reveal('.main__img--container', {
+                duration: 3000,
+                origin: 'top',
+                distance: '300px'
+            });
+            window.sr = ScrollReveal();
+            sr.reveal('.main__content', {
+                duration: 3000,
+                origin: 'left',
+                distance: '300px'
+            });
+            window.sr = ScrollReveal();
+            sr.reveal('.services__card', {
+                duration: 3000,
+                origin: 'left',
+                distance: '300px',
+                viewFactor: 0.4
+            });
+            sr.reveal('.services__card:nth-child(2)', {
+                duration: 3000,
+                origin: 'right',
+                distance: '300px',
+                viewFactor: 0.4
+            });
+            sr.reveal('.footer__link--items', {
+                duration: 3000,
+                origin: 'bottom',
+                distance: '300px',
+                viewFactor: 0.4
+            });
+            sr.reveal('.footer__logo', {
+                duration: 3000,
+                origin: 'left',
+                distance: '300px',
+                viewFactor: 0.4
+            });
+            sr.reveal('.website__rights', {
+                duration: 3000,
+                origin: 'bottom',
+                distance: '300px',
+                viewFactor: 0.4
+            });
+            sr.reveal('.social__icons', {
+                duration: 3000,
+                origin: 'right',
+                distance: '300px',
+                viewFactor: 0.4
+            });
+        </script>
+    </body>
+
+</html>
